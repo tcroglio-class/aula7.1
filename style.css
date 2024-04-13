@@ -1,0 +1,113 @@
+:root {
+    /* white mode all */
+    --background-primary-color: white;
+    --font-primary-color: black;
+    --font-secundary-color: black;
+
+    /* white mode header and footer */
+    --background-both-primary-color: grey;
+    --background-both-secundary-color: lightgrey;
+    --font-both-primary-color: black;
+}
+
+
+html,
+body {
+    background-color: var(--background-primary-color);
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: var(--background-both-primary-color);
+    color: var(--font-primary-color);
+    padding: 30px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        color: var(--font-secundary-color);
+    }
+}
+
+main {
+    margin-top: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+    section {
+        margin-bottom: 100px;
+
+        p {
+            color: var(--font-primary-color);
+            text-align: justify;
+        }
+
+        h2,
+        h3 {
+            color: var(--font-secundary-color);
+        }
+    }
+
+    .alinharLadoaLado {
+        display: flex;
+        justify-content: space-between;
+
+
+        a {
+            color: darkblue;
+        }
+
+        .buttons {
+            /* border: 1px solid red; */
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 10px;
+
+            button {
+                background-color: var(--background-both-secundary-color);
+                border: none;
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                p {
+                    max-width: 60px;
+                    text-align: center;
+                }
+            }
+
+            button:hover {
+                background-color: grey;
+                transition: 0.5s;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+.footer1 {
+    background-color: var(--background-both-primary-color);
+    color: var(--font-both-primary-color);
+    padding: 30px;
+}
+
+.footer2 {
+    background-color: var(--background-both-secundary-color);
+    padding: 10px;
+}
+
+.alignRight {
+    margin-left: 60px;
+}
